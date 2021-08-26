@@ -75,12 +75,12 @@ Run batch-files. These batch-files needs to run only once.
 - Navigate to project folder
 - Run batch-file ```Run training process.cmd```
 - Input requested values during process (base model, batch size, training steps)
-- Trained & converted Tensorflow models are saved in ```C:\<your project folder>\content\trained_models```
+- Trained & exported models are saved in ```C:\<your project folder>\content\trained_models```
 - You can monitor training process with Tensorboard ```Start TensorBoard.cmd```
 
 ### 7. Using the model
 
-Model files can be loaded and executed in Node-RED using [AI] Detect-sm found here: 
+Tensorflow SavedModel files can be loaded and executed in Node-RED using [AI] Detect-sm found here: 
 
 https://github.com/juhaautioniemi/tequ-api-client
 
