@@ -1,7 +1,7 @@
 # tequ-tf2-ca-training-pipeline
 This guide is for configuring your Windows machine to train Tensorflow saved models. Guide assumes that source image files are annotated with Cloud Annotations tool (https://cloud.annotations.ai/). 
 
-Colab notebook https://colab.research.google.com/github/cloud-annotations/google-colab-training/blob/master/object_detection.ipynb has been used as template for this pipeline and functionality of this notebook has been transferred to work offline on Windows machine.
+Colab notebook https://colab.research.google.com/github/cloud-annotations/google-colab-training/blob/master/object_detection.ipynb has been used as template for this pipeline and functionality of this notebook has been transferred to work offline on Windows machine and modified to work with Tensorflow 2.x.
 
 Colab version of this pipeline can be found here:
 
