@@ -84,8 +84,6 @@ Model files can be loaded and executed in Node-RED using [AI] Detect-sm found he
 
 https://github.com/juhaautioniemi/tequ-api-client
 
-More information:
-
 ### 8. Retraining or training another model
 - Change or modify source files, if needed
 - Repeat step 6
