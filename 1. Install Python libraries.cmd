@@ -10,3 +10,7 @@ pip install tensorflow-hub
 pip install PyInquirer
 pip install h5py
 pip install PyYAML
+pip install gin-config
+pip install tensorflow-addons
+
+

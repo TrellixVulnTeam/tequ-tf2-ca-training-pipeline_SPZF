@@ -1,1 +1,1 @@
-git clone --depth 1 https://github.com/cloud-annotations/models
+git clone --depth 1 https://github.com/juhaautioniemi/models.git
