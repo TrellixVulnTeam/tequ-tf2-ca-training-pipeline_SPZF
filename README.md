@@ -84,6 +84,10 @@ Tensorflow SavedModel files can be loaded and executed in Node-RED using [AI] De
 
 https://github.com/juhaautioniemi/tequ-api-client
 
+More examples using Saved model:
+
+https://www.tensorflow.org/guide/saved_model
+
 ### 8. Retraining or training another model
 - Change or modify source files, if needed
 - Repeat step 6
