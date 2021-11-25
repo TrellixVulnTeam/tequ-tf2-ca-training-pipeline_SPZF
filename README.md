@@ -42,7 +42,7 @@ You could also setup environment variables to point the location of cuDNN files 
 ### 3. Clone this project 
 
 ```
-git clone https://github.com/juhaautioniemi/tequ-tf2-ca-training-pipeline.git
+git clone https://github.com/Lapland-UAS-Tequ/tequ-tf2-ca-training-pipeline.git
 ```
 
 ### 4. Navigate to project folder
@@ -82,7 +82,7 @@ Run batch-files. These batch-files needs to run only once.
 
 Tensorflow SavedModel files can be loaded and executed in Node-RED using [AI] Detect-sm found here: 
 
-https://github.com/juhaautioniemi/tequ-api-client
+https://github.com/Lapland-UAS-Tequ/tequ-api-client
 
 More examples using Saved model:
 
