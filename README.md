@@ -1,5 +1,7 @@
-This Github resource is made possible by Fish-IoT project
+This Github resource is developed in Fish-IoT project
 https://www.tequ.fi/en/project-bank/fish-iot/ 
+
+---
 
 # tequ-tf2-ca-training-pipeline
 This guide is for configuring your Windows machine to train Tensorflow saved models. Guide assumes that source image files are annotated with Cloud Annotations tool (https://cloud.annotations.ai/) or converted to Cloud Annotations format from Pascal VOC using conversion tool (https://github.com/juhaautioniemi/xml2json).
