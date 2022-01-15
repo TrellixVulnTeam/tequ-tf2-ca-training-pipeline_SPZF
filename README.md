@@ -1,4 +1,4 @@
-This Github resource is developed in Fish-IoT project
+This resource is developed in Fish-IoT project
 
 https://www.tequ.fi/en/project-bank/fish-iot/ 
 
