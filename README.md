@@ -1,3 +1,9 @@
+##
+##  This guide is produced in Fish-IoT project
+##
+##  https://www.tequ.fi/en/project-bank/fish-iot/ 
+##
+
 # tequ-tf2-ca-training-pipeline
 This guide is for configuring your Windows machine to train Tensorflow saved models. Guide assumes that source image files are annotated with Cloud Annotations tool (https://cloud.annotations.ai/) or converted to Cloud Annotations format from Pascal VOC using conversion tool (https://github.com/juhaautioniemi/xml2json).
 
@@ -91,4 +97,3 @@ https://www.tensorflow.org/guide/saved_model
 ### 8. Retraining or training another model
 - Change or modify source files, if needed
 - Repeat step 6
-
