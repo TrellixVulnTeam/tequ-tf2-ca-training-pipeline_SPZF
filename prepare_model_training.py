@@ -16,14 +16,6 @@ from object_detection.utils import label_map_util
 
 basepath = os.getcwd()
 
-#General settings
-credentials = {
-  "bucket": "ca_source_data",
-  "access_key_id": "d409e14fba3946d28732a952ee6675a6",
-  "secret_access_key": "c05905749a6ea2e0cfbb7a6a2cf524f01d40ec3e38c17d97",
-  "endpoint_url": "https://s3.eu-de.cloud-object-storage.appdomain.cloud"
-}
-
 #Base model
 #NUM_TRAIN_STEPS  = int(input("Set number of training steps: ").strip())
 TRAIN_CONFIG_BATCH_SIZE = int(input("Set batch size: ").strip())
