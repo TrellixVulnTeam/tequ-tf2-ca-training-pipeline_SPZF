@@ -14,32 +14,57 @@ Colab notebook https://colab.research.google.com/github/cloud-annotations/google
 
 | Software      | Version       | Link |
 | ------------- |:-------------:| :-------------:| 
-| CUDA          | 10.0.130      | https://developer.nvidia.com/cuda-downloads |
-| cuDNN         | 7.6.5.32      | https://developer.nvidia.com/cudnn |
-| Protoc        | 3.17.3        | https://developers.google.com/protocol-buffers/docs/downloads |
-| Python        | 3.7.9         | https://www.python.org/downloads/release/python-379/ |
-| Git           | 2.33.0        | https://git-scm.com/downloads |
-| GPU drivers   | Supported driver for Cuda 10 | https://www.nvidia.com/Download/index.aspx?lang=en-us |
+| CUDA          | 11.6.0_511.23 | https://developer.nvidia.com/cuda-downloads |
+| cuDNN         | 8.3.2.44      | https://developer.nvidia.com/cudnn |
+| Protoc        | 3.19.4        | https://developers.google.com/protocol-buffers/docs/downloads |
+| Python        | 3.10.2        | https://www.python.org/downloads/release/python-379/ |
+| Git           | 2.35.1        | https://git-scm.com/downloads |
+| GPU drivers   | Supported driver for Cuda 11 | https://www.nvidia.com/Download/index.aspx?lang=en-us |
 
-### 2. cuDNN installation
+## 2. Download CUDA 11 Toolkit.
 
-Copy extracted files to CUDA Toolkit installation folder following the same folder structure.
+Download CUDA 11 toolkit and run installer.
 
-Copy extracted files in folder ```Cuda\bin``` to ```C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin```
+https://tequ-files.s3.eu.cloud-object-storage.appdomain.cloud/cuda_11.6.0_511.23_windows.exe
 
-Copy extracted files in folder ```Cuda\lib``` to ```C::\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\lib```
 
-Copy extracted files in folder ```Cuda\include``` to ```C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include```
+## 3. Download and unzip cuDNN 8.
 
-You could also setup environment variables to point the location of cuDNN files to make things work.
+Download cuDNN 8 package and install files.
 
-### 3. Clone this project 
+https://tequ-files.s3.eu.cloud-object-storage.appdomain.cloud/cudnn_8.3.2.44_windows.exe
+
+
+Add following paths to PATH environment variable:
+
+```
+C:\Program Files\NVIDIA\CUDNN\v8.3\bin
+```
+
+```
+C:\Program Files\NVIDIA\CUDNN\v8.3\lib\x64
+```
+
+
+Download ZLIB DLL
+
+https://tequ-files.s3.eu.cloud-object-storage.appdomain.cloud/zlib123dllx64.zip
+
+Extract to C:\zlib123dllx64
+
+Add following path to PATH environment variable
+
+```
+C:\zlib123dllx64\dll_x64
+```
+
+### 4. Clone this project 
 
 ```
 git clone https://github.com/juhaautioniemi/tequ-tf1-ca-training-pipeline.git
 ```
 
-### 4. Navigate to project folder
+### 5. Open command line and navigate to project folder
 
 Run batch-files
 
@@ -51,27 +76,32 @@ Run batch-files
 
 ```4. Setup environment variables.cmd```
 
-### 5. Get source files
+```5. Run protoc.cmd```
+
+### 6. Get source files
 
 - Export your Cloud Annotations project as ZIP-file
-- Unzip files to C:\<your project folder>\content\ca_source_data
+- Unzip files to C:\tequ-tf2-ca-training-pipeline\content\ca_source_data
 
-### 6. Run training process
+### 7. Run training process
 
 - Navigate to project folder
 - Run batch-file ```Run training process.cmd```
 - Input requested values during process (base model, batch size, training steps)
-- Trained & converted Tensorflow.js models are saved in ```C:\<your project folder>\content\trained_models```
+- Trained Tensorflow saved models will located in ```C:\tequ-tf2-ca-training-pipeline\content\trained_models```
 
-### 7. Using the model
+### 8. Using the model
 
-Model files can be loaded and executed in Node-RED with 
+Model files can be loaded and executed for example in Node-RED with 
 
-https://flows.nodered.org/node/node-red-contrib-cloud-annotations-gpu
-or
-https://flows.nodered.org/node/node-red-contrib-tf-model
-
-More information:
-https://github.com/juhaautioniemi/jetson-nodered-tensorflow
 https://github.com/juhaautioniemi/win10-nodered-tensorflow
+
+https://github.com/Lapland-UAS-Tequ/tequ-jetson-nodered-tensorflow
+
+https://github.com/Lapland-UAS-Tequ/tequ-setup-triton-inference-server
+
+
+
+
+
 
