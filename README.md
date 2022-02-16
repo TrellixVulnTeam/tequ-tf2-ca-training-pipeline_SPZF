@@ -83,11 +83,52 @@ cd c:\tequ-tf2-ca-training-pipeline
 
 # Training the model
 
-- Navigate to project folder
-- Run batch-file ```Run training process.cmd```
-- Input requested values during process (base model, batch size, training steps)
-- Trained Tensorflow saved models will located in ```C:\tequ-tf2-ca-training-pipeline\content\trained_models```
+```
+cd c:\tequ-tf2-ca-training-pipeline
+```
 
+```
+Run training process.cmd
+```
+
+Input requested values during process (base model, batch size, training steps)
+
+Base model options: 1 or 2
+
+Batch size depends of your GPU, I have used batch size = 12
+
+For trraining steps I have used 10000
+
+-Trained Tensorflow saved models will appear to: 
+
+```C:\tequ-tf2-ca-training-pipeline\content\trained_models```
+
+
+# Monitoring the model training process
+
+Open new command line window
+
+```
+cd c:\tequ-tf2-ca-training-pipeline
+```
+
+```
+Start TensorBoard.cmd
+```
+
+# Evaluating the model
+
+Open command line 
+
+```
+cd c:\tequ-tf2-ca-training-pipeline
+```
+
+```
+Evaluate model.cmd
+```
+
+*Evaluate model script assumes that you start it in same day after training. If you wish to run evaluate later, you need to modify the script*
 
 # Using the model
 
