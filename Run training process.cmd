@@ -14,7 +14,7 @@ SET CONFIG_PATH=%cd%\models\research\object_detection\configs\tf2\
 SET YYYYMMDD=%DATE:~9,4%-%DATE:~6,2%-%DATE:~3,2%
 SET /a _rand=(%RANDOM%*500/32768)+1
 SET MODEL_PATH=%cd%\content\trained_models\%YYYYMMDD%\
-SET PROTOC_PATH=%cd%\protoc\bin\
+
 
 
 RMDIR %cd%\content\exported /S /Q 
@@ -22,12 +22,10 @@ RMDIR %cd%\content\output /S /Q
 RMDIR %cd%\content\data /S /Q
 RMDIR %cd%\content\checkpoint /S /Q
 
-echo Run protoc...
 cd models
 cd research
-%PROTOC_PATH%protoc.exe object_detection\protos\*.proto --python_out=.
 echo Run model_builder_tf2_test.py
-python object_detection/builders/model_builder_tf2_test.py
+python object_detection\builders\model_builder_tf2_test.py
 cd..
 cd..
 

@@ -1,1 +1,1 @@
-git clone --depth 1 https://github.com/juhaautioniemi/models.git
+git clone --depth 1 https://github.com/Lapland-UAS-Tequ/models.git

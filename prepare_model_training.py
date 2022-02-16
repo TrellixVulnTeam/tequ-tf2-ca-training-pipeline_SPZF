@@ -12,7 +12,6 @@ from object_detection.utils import label_map_util
 import re
 from google.protobuf import text_format
 from object_detection.utils import config_util
-from object_detection.utils import label_map_util
 
 basepath = os.getcwd()
 
@@ -20,7 +19,6 @@ basepath = os.getcwd()
 #NUM_TRAIN_STEPS  = int(input("Set number of training steps: ").strip())
 TRAIN_CONFIG_BATCH_SIZE = int(input("Set batch size: ").strip())
 TRAIN_FILES_PERCENT = 0.7
-
 
 print("\r\n\r\n")
 print("Available base models:\r\n")

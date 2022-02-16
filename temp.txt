@@ -1,0 +1,1 @@
+C:\tequ-tf2-ca-training-pipeline\content\output\ckpt-11
