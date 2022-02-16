@@ -21,50 +21,19 @@ Colab notebook https://colab.research.google.com/github/cloud-annotations/google
 | Git           | 2.35.1        | https://git-scm.com/downloads |
 | GPU drivers   | Supported driver for Cuda 11 | https://www.nvidia.com/Download/index.aspx?lang=en-us |
 
-## 2. Download CUDA 11 Toolkit.
 
-Download CUDA 11 toolkit and run installer.
+CUDA & cuDNN installation steps are documented in following repository:
 
-https://tequ-files.s3.eu.cloud-object-storage.appdomain.cloud/cuda_11.6.0_511.23_windows.exe
-
-
-## 3. Download and unzip cuDNN 8.
-
-Download cuDNN 8 package and install files.
-
-https://tequ-files.s3.eu.cloud-object-storage.appdomain.cloud/cudnn_8.3.2.44_windows.exe
+https://github.com/juhaautioniemi/win10-nodered-tensorflow
 
 
-Add following paths to PATH environment variable:
-
-```
-C:\Program Files\NVIDIA\CUDNN\v8.3\bin
-```
-
-```
-C:\Program Files\NVIDIA\CUDNN\v8.3\lib\x64
-```
-
-
-Download ZLIB DLL
-
-https://tequ-files.s3.eu.cloud-object-storage.appdomain.cloud/zlib123dllx64.zip
-
-Extract to C:\zlib123dllx64
-
-Add following path to PATH environment variable
-
-```
-C:\zlib123dllx64\dll_x64
-```
-
-### 4. Clone this project 
+### 2. Clone this project 
 
 ```
 git clone https://github.com/juhaautioniemi/tequ-tf1-ca-training-pipeline.git
 ```
 
-### 5. Open command line and navigate to project folder
+### 3. Open command line and navigate to project folder
 
 Run batch-files
 
@@ -78,19 +47,21 @@ Run batch-files
 
 ```5. Run protoc.cmd```
 
-### 6. Get source files
+### 4. Get source files
 
 - Export your Cloud Annotations project as ZIP-file
 - Unzip files to C:\tequ-tf2-ca-training-pipeline\content\ca_source_data
 
-### 7. Run training process
+
+## Training the model
 
 - Navigate to project folder
 - Run batch-file ```Run training process.cmd```
 - Input requested values during process (base model, batch size, training steps)
 - Trained Tensorflow saved models will located in ```C:\tequ-tf2-ca-training-pipeline\content\trained_models```
 
-### 8. Using the model
+
+## Using the model
 
 Model files can be loaded and executed for example in Node-RED with 
 
@@ -99,9 +70,4 @@ https://github.com/juhaautioniemi/win10-nodered-tensorflow
 https://github.com/Lapland-UAS-Tequ/tequ-jetson-nodered-tensorflow
 
 https://github.com/Lapland-UAS-Tequ/tequ-setup-triton-inference-server
-
-
-
-
-
 
