@@ -1,16 +1,16 @@
-# tequ-tf1-ca-training-pipeline
+tequ-tf1-ca-training-pipeline
 This guide is for configuring your Windows machine to train Tensorflow.js models. Guide assumes that source image files are annotated with Cloud Annotations tool (https://cloud.annotations.ai/). 
 
 Colab notebook https://colab.research.google.com/github/cloud-annotations/google-colab-training/blob/master/object_detection.ipynb has been used as template for this pipeline and functionality of this notebook has been transferred to work offline on Windows machine.
 
-## Requirements
+# Requirements
 
 - Windows OS (Windows 10 & Windows 2019 server are tested)
 - NVIDIA GPU (Quadro P600 and Tesla P100 are tested)
 
-## Configuration
+# Configuration
 
-### 1. Download and install following software.
+## 1. Download and install following software.
 
 | Software      | Version       | Link |
 | ------------- |:-------------:| :-------------:| 
@@ -27,33 +27,50 @@ CUDA & cuDNN installation steps are documented in following repository:
 https://github.com/juhaautioniemi/win10-nodered-tensorflow
 
 
-### 2. Clone this project 
+## 2. Open command line and clone this project 
 
 ```
-git clone https://github.com/juhaautioniemi/tequ-tf1-ca-training-pipeline.git
+cd\
 ```
 
-### 3. Open command line and navigate to project folder
+```
+git clone https://github.com/Lapland-UAS-Tequ/tequ-tf2-ca-training-pipeline.git
+```
 
-Run batch-files
+## 3. Run batch-files to setup environment
 
-```1. Install Python libraries.cmd```
+```
+cd c:\tequ-tf2-ca-training-pipeline
+```
 
-```2. Clone models repository.cmd```
 
-```3. Build object detection api.cmd```
+```
+1. Install Python libraries.cmd
+```
 
-```4. Setup environment variables.cmd```
+```
+2. Clone models repository.cmd
+```
 
-```5. Run protoc.cmd```
+```
+3. Build object detection api.cmd
+```
 
-### 4. Get source files
+```
+4. Setup environment variables.cmd
+```
+
+```
+5. Run protoc.cmd
+```
+
+## 4. Get source files
 
 - Export your Cloud Annotations project as ZIP-file
 - Unzip files to C:\tequ-tf2-ca-training-pipeline\content\ca_source_data
 
 
-## Training the model
+# Training the model
 
 - Navigate to project folder
 - Run batch-file ```Run training process.cmd```
@@ -61,7 +78,7 @@ Run batch-files
 - Trained Tensorflow saved models will located in ```C:\tequ-tf2-ca-training-pipeline\content\trained_models```
 
 
-## Using the model
+# Using the model
 
 Model files can be loaded and executed for example in Node-RED with 
 
