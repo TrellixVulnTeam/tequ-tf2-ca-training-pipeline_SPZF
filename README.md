@@ -132,7 +132,9 @@ Evaluate model.cmd
 
 # Using the model
 
-Model files can be loaded and executed for example in Node-RED with 
+Model files can be loaded and executed for example in Node-RED.
+
+Examples are available in following repositories:
 
 https://github.com/juhaautioniemi/win10-nodered-tensorflow
 
