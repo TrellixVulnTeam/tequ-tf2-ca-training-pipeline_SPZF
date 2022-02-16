@@ -1,4 +1,11 @@
-tequ-tf1-ca-training-pipeline
+This repository is developed in Fish-IoT project
+
+https://www.tequ.fi/en/project-bank/fish-iot/ 
+
+---
+
+# Description 
+
 This guide is for configuring your Windows machine to train Tensorflow.js models. Guide assumes that source image files are annotated with Cloud Annotations tool (https://cloud.annotations.ai/). 
 
 Colab notebook https://colab.research.google.com/github/cloud-annotations/google-colab-training/blob/master/object_detection.ipynb has been used as template for this pipeline and functionality of this notebook has been transferred to work offline on Windows machine.
