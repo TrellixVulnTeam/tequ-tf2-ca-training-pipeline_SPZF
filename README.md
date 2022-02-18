@@ -35,7 +35,7 @@ Colab notebook https://colab.research.google.com/github/cloud-annotations/google
 
 CUDA & cuDNN installation steps are documented in following repository:
 
-https://github.com/juhaautioniemi/win10-nodered-tensorflow
+https://github.com/Lapland-UAS-Tequ/win10-nodered-tensorflow
 
 
 ## 2. Open command line and clone this project 
