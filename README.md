@@ -136,7 +136,7 @@ Model files can be loaded and executed for example in Node-RED.
 
 Examples are available in following repositories:
 
-https://github.com/juhaautioniemi/win10-nodered-tensorflow
+https://github.com/Lapland-UAS-Tequ/win10-nodered-tensorflow
 
 https://github.com/Lapland-UAS-Tequ/tequ-jetson-nodered-tensorflow
 
